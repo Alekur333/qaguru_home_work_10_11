@@ -31,7 +31,8 @@ public class TestBase {
 //        String selenoidUrl =
 //                format("https://%s:%s@selenoid.autotests.cloud/wd/hub/", selenoidLogin, selenoidPassword);
 //        String selenoidUrl = format(System.getProperty("selenoidUrl"), selenoidLogin, selenoidPassword);
-        String selenoidUrl = format("https://%s:%s@%s&quot", selenoidLogin, selenoidPassword, System.getProperty("selenoidUrl"));
+        String selenoidUrl = format("https://%s:%s@%s&quot", selenoidLogin, selenoidPassword,
+                System.getProperty("selenoidUrl"));
 
         Configuration.remote = selenoidUrl;
 //        System.out.println(selenoidUrl);
