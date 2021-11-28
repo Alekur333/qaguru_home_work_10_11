@@ -10,5 +10,6 @@ public interface CredentialsConfig extends Config {
     String mobile();
     String selenoidLogin();
     String selenoidPassword();
+    String url();
 
 }
