@@ -64,11 +64,11 @@ task properties_tests (type: Test) {
     }
 }
 
-task many_tests (type: Test) {
-    useJUnitPlatform {
-            includeTags "properties", "smoke"
-//            includeTags "smoke"
-            excludeTags "prod", "skip"
-    }
-}
+//task many_tests (type: Test) {
+//    useJUnitPlatform {
+//            includeTags "properties", "smoke"
+////            includeTags "smoke"
+//            excludeTags "prod", "skip"
+//    }
+//}
 
