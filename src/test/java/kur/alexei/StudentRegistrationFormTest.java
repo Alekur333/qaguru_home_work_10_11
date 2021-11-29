@@ -20,8 +20,8 @@ public class StudentRegistrationFormTest extends TestBase {
 
     String firstName = System.getProperty("firstName", "Alexei");
     String lastName = System.getProperty("lastName", "Kurochkin");
-    String email = System.getProperty("email", credentials.email());
-    String mobile = System.getProperty("mobile", credentials.mobile());
+    String email = System.getProperty("email", "myProperties@mail.com");
+    String mobile = System.getProperty("mobile", "9876543210");
     String gender = "Male";
     String subject = "comp";
     File filePath = new File("src/test/resources/files/filePath.png");
