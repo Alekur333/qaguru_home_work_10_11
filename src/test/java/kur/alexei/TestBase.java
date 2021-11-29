@@ -22,18 +22,18 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 //        String loginData = credentials.selenoidLogin() + ":" + credentials.selenoidPassword();
 //        String selenoid = "https://" + loginData + "@selenoid.autotests.cloud/wd/hub/";
-
-        String selenoidLogin = credentials.selenoidLogin();
-        String selenoidPassword = credentials.selenoidPassword();
-//        String selenoidUrl =
-//                format("https://%s:%s@selenoid.autotests.cloud/wd/hub/", selenoidLogin, selenoidPassword);
-//        String selenoidUrl = format(System.getProperty("selenoidUrl"), selenoidLogin, selenoidPassword);
-        String selenoidUrl = format("https://%s:%s@%s",  selenoidLogin, selenoidPassword,
-                System.getProperty("selenoidUrl"));
-        Configuration.remote = selenoidUrl;
+//
+//        String selenoidLogin = credentials.selenoidLogin();
+//        String selenoidPassword = credentials.selenoidPassword();
+////        String selenoidUrl =
+////                format("https://%s:%s@selenoid.autotests.cloud/wd/hub/", selenoidLogin, selenoidPassword);
+////        String selenoidUrl = format(System.getProperty("selenoidUrl"), selenoidLogin, selenoidPassword);
+//        String selenoidUrl = format("https://%s:%s@%s",  selenoidLogin, selenoidPassword,
+//                System.getProperty("selenoidUrl"));
+//        Configuration.remote = selenoidUrl;
 //        System.out.println(selenoidUrl);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
